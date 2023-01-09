@@ -38,7 +38,7 @@ public class MainPageTest {
         int result = r.nextInt(high-low) + low;
         String email="test_user" + result+"@gmail.com";
 
-        //Testing
+        //Testing Register
         Selenide.open("http://ec2-13-230-127-101.ap-northeast-1.compute.amazonaws.com:8181/register");
         $(By.id("name")).sendKeys(new CharSequence[]{"User"});
         $(By.id("email")).sendKeys(new CharSequence[]{email});
